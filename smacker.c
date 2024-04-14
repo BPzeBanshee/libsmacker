@@ -1784,8 +1784,8 @@ char smk_seek_keyframe(smk s, unsigned long f)
 	s->cur_frame = f;
 
 	/* roll back to previous keyframe in stream, or 0 if no keyframes exist */
-	while (s->cur_frame > 0 && !(s->keyframe[s->cur_frame]))
-		s->cur_frame --;
+	//while (s->cur_frame > 0 && !(s->keyframe[s->cur_frame]))
+	//	s->cur_frame --;
 
 	/* render the frame: we're ready */
 	if (smk_render(s) < 0) {

@@ -1,3 +1,6 @@
+Note: line in smk_seek_keyframe disabled due to a certain .smk file
+returning only the first frame when using the function.
+
 libsmacker
 A C library for decoding .smk Smacker Video files
 
